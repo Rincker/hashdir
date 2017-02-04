@@ -1,5 +1,5 @@
 # hashdir
-Encrypted directory class to buy the source send $10 to Paypall info@climatebabes.com
+Encrypted directory class to buy the source send $150 to Paypall info@climatebabes.com
 <p>
 This class saves data in encrypted files named by hashvalues that for the most part are unknown. Data can be accessed by linux style dir commands and magic functions for getting and setting (as shown below). This is ideal for keeping records you yourself don't even want to access, and which you don't want any hacked to bave much use of. 
 <br>
@@ -61,6 +61,8 @@ To create a subdir use
 $hashdir->mkdir("sub3",array(1,4423,23,145,6));
 </pre>
 
-More functions are to follow.
+<p>
+Functions for distributed storage of hashdir files, private and public key use and maintenance functions are in the works.
+</p>
 
 
