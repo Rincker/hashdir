@@ -1,0 +1,2 @@
+# hashdir
+Encrypted directory class
