@@ -38,7 +38,13 @@ To get a value of this $hashdir use
   $hashdir->varname;
 </pre>
 <p>
-This can either return an value, an array <b>or a hashdir object of the subdir</b>.
+This can either return an value, an array <b>or a hashdir object of the subdir</b>. So you can drill down into your hashdirectories like this:
+<pre>
+$subdir = $hashdir->sub1;
+$subdir->ls();
+$subdir->variable = 10;
+</pre>
+Newly set values are stored in encrypted form instantly. This only touches the part of the directory tree contained by that hashdir object, so it is fast. 
 </p>
 <p>
 To assign a value in this hashdir use 
