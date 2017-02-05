@@ -10,9 +10,9 @@
 Class Hashdir {
 
     private $dir = "dirname";
-  	private $parentKey="";
-  	private $parentHash;
-   	private $root = "/";
+    private $parentKey="";
+    private $parentHash;
+    private $root = "/";
     private $hash = "";
     private $key = "";
     private $hashArray = [];
@@ -146,12 +146,10 @@ Class Hashdir {
 				
                 $key = $this->hashArray[$var]['key'];
                 $hash = $this->hashArray[$var]['hash'];
-              
-              	$this->getremote($hash); 
 
-                $temp = new Hashdir($key, $hash,$var);
+                $child = new Hashdir($key, $hash,$var);
 
-                return $temp;
+                return $child;
               
             } else {
 
@@ -160,7 +158,7 @@ Class Hashdir {
           
         } else {
 
-            return false;
+            return NULL;
         }
     }
   
